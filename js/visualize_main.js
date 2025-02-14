@@ -12,7 +12,7 @@ function exportarExcel() {
     let fechaFormateada = `${anio}${mes}${dia}`;
     mes_selected = document.getElementById('periodoOpt');
     messs = mes_selected.options[mes_selected.selectedIndex].text.toLowerCase()
-    titulo = "_IAAS_"+messs+"_"+fechaFormateada+".xlsx";
+    titulo = "HGSMF41_IAAS_"+messs+"_"+fechaFormateada+".xlsx";
     // -- 
     XLSX.writeFile(wb, titulo);
 }
